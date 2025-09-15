@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Farmacia Salud+</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagen/dibujo2.svg" alt="Logo NOVAPHARMA">
+      <span>NOVAPHARMA</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+      <div class="contact-container">
+        <div class="form-card">
+          <h3>Envíanos un mensaje</h3>
+          <form id="form-contacto">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="info-card">
+          <h3>Nuestra Ubicación</h3>
+          <p>📍 Calle Salud #123, Ciudad</p>
+          <iframe src="https://www.google.com/maps/embed?..." 
+                  width="100%" height="250" style="border:0;" allowfullscreen="">
+          </iframe>
+          <p>📞 Teléfono: +503 1234 5678</p>
+          <p>✉️ Email: contacto@novapharma.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Farmacia Salud+</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
