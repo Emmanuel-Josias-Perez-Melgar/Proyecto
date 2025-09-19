@@ -142,7 +142,7 @@ nav a.active {
   background-position: center;
   padding: 5rem 2rem;
   text-align: center;
-  width: auto;
+  width: 2000px;
 }
 
 .hero h1 {
@@ -1077,3 +1077,4 @@ footer {
   color: #333;
 
 }
+
