@@ -1,65 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f8f9fa;
   color: #333;
   line-height: 1.6;
-}
-
-/* ===== HEADER ===== */
-header {
-  background: #2a9d8f;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header .logo {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: white;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-header .logo:hover {
-  transform: scale(1.1);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-}
-
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -3px;
-  left: 0;
-  background: #fff;
-  transition: width 0.3s;
-}
-
-nav a:hover::after,
-nav a.active::after {
-  width: 100%;
 }
 
 /* ===== HERO ===== */
@@ -183,12 +126,6 @@ footer {
   }
 }
 
-.sidebar{
-  display: none;
-}
-
-
-
 html, body {
   height: 100%;
   margin: 0;
@@ -230,48 +167,6 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
-}
-
-/* ===== HEADER ===== */
-header {
-  background: #2a9d8f;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.logo img {
-  height: 40px;
-}
-
-/* NAV */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a.active {
-  text-decoration: underline;
 }
 
 /* ===== HERO ===== */
@@ -397,8 +292,6 @@ footer {
 }
 
 
-
-
 /* ===== HERO PROMO ===== */
 .hero-promo {
   background: linear-gradient(to right, #2a9d8f, #264653);
@@ -465,47 +358,6 @@ footer {
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #009879;
-  color: #fff;
-}
-
-header .logo img {
-  width: 50px;
-  margin-right: 10px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-header nav ul li a.active {
-  text-decoration: underline;
-}
-
 .servicios {
   text-align: center;
   padding: 50px 20px;
@@ -559,49 +411,6 @@ footer {
   color: #fff;
   margin-top: 50px;
 }
-
-
-
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #009879;
-  color: #fff;
-}
-
-header .logo img {
-  width: 50px;
-  margin-right: 10px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-header nav ul li a.active {
-  text-decoration: underline;
-}
-
 .contacto {
   text-align: center;
   padding: 50px 20px;
@@ -673,47 +482,12 @@ footer {
   margin-top: 50px;
 }
 
-
-
-
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
   color: #333;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #3498DB;
-  color: #fff;
-}
-
-header .logo img {
-  width: 50px;
-  margin-right: 10px;
-  height: 100px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-header nav ul li a.active {
-  text-decoration: underline;
 }
 
 .consejos {
