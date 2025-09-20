@@ -5,24 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios - Farmacia Salud+</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
   <header>
-    <a href="index.html" class="logo">
-      <img src="imagen/dibujo2.svg" alt="Logo NOVAPHARMA">
-      <span>NOVAPHARMA</span>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
-        <li><a href="promociones.html">Promociones</a></li>
-        <li><a href="servicios.html" class="active">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="consejos.html">Consejos</a></li>
-      </ul>
-    </nav>
+        <div class="left">
+            <div class="menu-container">
+                <div class="menu" id="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="brand">
+                <a href="index.html">
+                  <img src="images/dibujo2.svg" class="logo">
+                </a>
+                <span class="name">Novapharma</span>
+            </div>
+        </div>
+        <div class="right">
+            <a href="index.html" class="icons-header">
+                <img src="images/inicio.svg" alt="Icono de Inicio">
+            </a>
+            <a href="catalogo.html" class="icons-header">
+                <img src="images/catalogo.svg" alt="question">
+            </a>
+            <a href="promociones.html" class="icons-header">
+                <img src="images/otro.svg" alt="notification">
+            </a>
+            <a href="servicios.html" class="icons-header">
+                <img src="images/otro.svg" alt="notification">
+            </a>
+            <a href="contacto.html" class="icons-header">
+                <img src="images/otro.svg" alt="notification">
+            </a>
+            <a href="consejos.html" class="icons-header">
+                <img src="images/otro.svg" alt="notification">
+            </a>
+            <img src="images/ad8a187ac178fcca657d5fc94140a54e.jpg" alt="imagen farmacia" class="user">
+        </div>
   </header>
+  <div class="sidebar" id="sidebar">
+      <nav>
+          <ul>
+              <li>
+                  <a href="index.html" class="selected">
+                      <img src="images/inicio.svg" alt="">
+                      <span>Inicio</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="catalogo.html">
+                      <img src="images/inicio.svg" alt="">
+                      <span>Catalogo</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="promociones.html">
+                      <img src="images/inicio.svg" alt="">
+                      <span>Promociones</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="servicios.html">
+                      <img src="images/inicio.svg" alt="">
+                      <span>Servicios</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="contacto.html">
+                      <img src="images/inicio.svg" alt="">
+                      <span>Contacto</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="consejos.html">
+                      <img src="images/inicio.svg" alt="">
+                      <span>Consejos</span>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </div>
 
   <main>
     <section class="servicios">
@@ -70,5 +135,6 @@
   <footer>
     <p>&copy; 2025 Farmacia Salud+</p>
   </footer>
+  <script src="js/nav.js"></script>
 </body>
 </html>
