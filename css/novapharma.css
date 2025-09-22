@@ -1,13 +1,18 @@
+/* ================== GOOGLE FONTS ================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 /* ================== RESET ================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html, body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 /* ================== HEADER ================== */
@@ -16,51 +21,61 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #009879;
+  background: linear-gradient(135deg, #009879, #007f65);
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 header .logo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.4rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #fff;
   text-decoration: none;
 }
 
 header .logo img {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 /* NAV */
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
   position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1f1f1;
 }
 
 nav a::after {
   content: "";
   position: absolute;
   width: 0%;
-  height: 2px;
-  bottom: -3px;
+  height: 3px;
+  bottom: -5px;
   left: 0;
   background: #fff;
   transition: width 0.3s;
+  border-radius: 3px;
 }
 
 nav a:hover::after,
@@ -80,9 +95,10 @@ nav a.active::after {
 
 /* ================== HERO ================== */
 .hero {
-  background: url('../imagen/11.png') center/cover no-repeat;
+
+  background:             url('../imagen/11.png') center/cover no-repeat;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 7rem 2rem;
   color: #fff;
   position: relative;
 }
@@ -90,79 +106,140 @@ nav a.active::after {
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
+  font-weight: 300;
+  color: white;
 }
 
 .btn {
   display: inline-block;
-  padding: 0.8rem 2rem;
-  background-color: #2ECC71;
+  padding: 0.9rem 2.2rem;
+  background: linear-gradient(135deg, #2ECC71, #27ae60);
   color: #fff;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: 0.3s;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .btn:hover {
-  background-color: #21867a;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+  transform: scale(1.08);
+}
+
+/* ================== SECCIONES ================== */
+section {
+  padding: 4rem 2rem;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #009879;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #2ECC71;
+  margin: 0.8rem auto;
+  border-radius: 2px;
+}
+
+section p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 /* ================== GRID ================== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   gap: 2rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 /* ================== CARDS ================== */
 .card {
   background-color: #fff;
-  border-radius: 15px;
-  padding: 1.5rem;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   margin-bottom: 1rem;
 }
 
-/* ================== SECCIONES ================== */
-.servicios h2,
-.productos h2 {
-  text-align: center;
-  font-size: 2.5rem;
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
   color: #009879;
-  margin-bottom: 2rem;
+  font-weight: 600;
 }
 
-.servicios p,
-.productos p {
-  font-size: 1rem;
-  color: #555;
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
 }
 
 /* ================== FOOTER ================== */
 footer {
-  background-color: #2ECC71;
+  background: linear-gradient(135deg, #009879, #007f65);
   color: #fff;
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+footer .social {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer .social a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+footer .social a:hover {
+  color: #2ECC71;
+  transform: scale(1.2);
 }
 
 /* ================== RESPONSIVE ================== */
@@ -171,7 +248,7 @@ footer {
     position: fixed;
     top: 70px;
     right: 0;
-    width: 220px;
+    width: 240px;
     height: calc(100% - 70px);
     background-color: #009879;
     flex-direction: column;
@@ -190,7 +267,7 @@ footer {
 
   nav ul {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.8rem;
   }
 
   .menu-toggle {
@@ -198,14 +275,14 @@ footer {
   }
 
   header {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.2rem;
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
