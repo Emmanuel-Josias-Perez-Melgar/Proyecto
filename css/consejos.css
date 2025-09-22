@@ -118,8 +118,8 @@ nav a.active::after {
 }
 
 .card .icon img { 
-  width:100px; 
-  height:110px; 
+  width:200px; 
+  height:140px; 
   margin-bottom:1rem; 
 }
 
