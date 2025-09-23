@@ -51,25 +51,25 @@ body {
 }
 
 .form-card input, .form-card textarea {
-  width:100%; 
-  padding:12px; 
-  margin-bottom:15px; 
-  border:1px solid #ccc; 
-  border-radius:8px; 
-  font-size:1rem;
+    width:100%; 
+    padding:12px; 
+    margin-bottom:15px; 
+    border:1px solid #ccc; 
+    border-radius:8px; 
+    font-size:1rem;
 }
 
 .form-card button {
-  width:100%; 
-  padding:12px; 
-  background:#009879; 
-  color:#fff; 
-  border:none; 
-  border-radius:8px;
-  font-size:1rem; 
-  font-weight:bold; 
-  cursor:pointer; 
-  transition:0.3s;
+    width:100%; 
+    padding:12px; 
+    background:#009879; 
+    color:#fff; 
+    border:none; 
+    border-radius:8px;
+    font-size:1rem; 
+    font-weight:bold; 
+    cursor:pointer; 
+    transition:0.3s;
 }
 
 .form-card button:hover { 
@@ -105,36 +105,35 @@ footer {
 
 /* RESPONSIVE */
 @media(max-width:768px){
-  
-.contact-flex { 
-    flex-direction:column; 
-    gap:25px; 
-}
-
-.map-container { 
-    height:300px; 
-}
-
-nav ul { 
-    flex-direction:column; 
-    display:none; 
-    background:#009879; 
-    width:200px; 
-    position:absolute; 
-    top:70px; 
-    right:0; 
-    border-radius:0 0 10px 10px; 
-    padding:10px 0; 
-}
-
-nav.show { 
-    display:flex; 
-    flex-direction:column; 
-    gap:15px; 
-    text-align:center; 
-}
-
-.menu-toggle { 
-    display:block; 
+    .contact-flex { 
+        flex-direction:column; 
+        gap:25px; 
     }
+
+    .map-container { 
+        height:300px; 
+    }
+
+    nav ul { 
+        flex-direction:column; 
+        display:none; 
+        background:#009879; 
+        width:200px; 
+        position:absolute; 
+        top:70px; 
+        right:0; 
+        border-radius:0 0 10px 10px; 
+        padding:10px 0; 
+    }
+
+    nav.show { 
+        display:flex; 
+        flex-direction:column; 
+        gap:15px; 
+        text-align:center; 
+    }
+
+    .menu-toggle { 
+        display:block; 
+        }
 }
