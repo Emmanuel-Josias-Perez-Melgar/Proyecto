@@ -195,12 +195,13 @@ footer .social a:hover {
 
 }
 
-.alternar menu{
-  background: url("../imagen/11.png")
+.menu-toggle{
+  background:url('/imagen/11.png') center/cover no-repeat;
+  text-align: center;
+  padding: 7rem 2rem;
+  color: #fff;
+  position: relative;
 }
 
-.menu-toggle{
-  background-image: url(../imagen/11.png)
-}
 
 
