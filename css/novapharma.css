@@ -178,6 +178,7 @@ footer .social a:hover {
 
   .menu-toggle {
     display: block;
+    background: url(../imagen/11.png)
   }
 
   header {
@@ -197,3 +198,4 @@ footer .social a:hover {
 .alternar menu{
   background: url("../imagen/11.png")
 }
+
