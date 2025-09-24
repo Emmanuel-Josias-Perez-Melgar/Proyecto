@@ -18,7 +18,7 @@ html, body {
 /* ================== HERO ================== */
 .hero {
 
-  background:url('../imagen/11.png') center/cover no-repeat;
+  background:url('/imagen/11.png') center/cover no-repeat;
   text-align: center;
   padding: 7rem 2rem;
   color: #fff;
@@ -202,3 +202,4 @@ footer .social a:hover {
 .menu-toggle{
   background-image: url"imagen/11.png"
 }
+
