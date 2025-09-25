@@ -4,6 +4,10 @@ body {
   color:#333;
 }
 
+.new-logo{
+  width: 4rem;
+}
+
 /* CONSEJOS */
 .consejos { 
   padding:3rem 2rem; 

@@ -5,6 +5,9 @@ body {
     color:#333; 
 }
 
+.new-logo{
+  width: 4rem;
+}
 .categoria { 
     padding:60px 20px; 
     text-align:center; 

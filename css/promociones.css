@@ -10,6 +10,10 @@ html, body {
   color: #333;
 }
 
+.new-logo{
+  width: 4rem;
+}
+
 /* ================== PROMOCIONES ================== */
 .promociones {
   padding: 3rem 2rem;

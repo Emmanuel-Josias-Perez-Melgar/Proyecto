@@ -4,6 +4,10 @@ body {
     color:#333; 
 }
 
+.new-logo{
+  width: 4rem;
+}
+
 /* CONTACTO FLEX */
 .contacto { 
     text-align:center; 
