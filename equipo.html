@@ -4,108 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Equipo Médico - NOVAPHARMA</title>
+  <link rel="icon" href="images/icono de la paguina.svg" type="image/png"> 
   <link rel="stylesheet" href="css/equipo.css">
 </head>
 <body>
   <header>
-        <div class="left">
-            <div class="menu-container">
-                <div class="menu" id="menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <div class="brand">
-                <img class="new-logo" src="images/new-icon.svg" alt="" class="logo">
-                <span class="name">Novapharma</span>
-            </div>
-        </div>
-        <div class="right">
-            <a href="#" class="icons-header">
-                <img src="images/inicio.svg" alt="chat">
-            </a>
-            <a href="#" class="icons-header">
-                <img src="images/catalogo.svg" alt="question">
-            </a>
-            <a href="#" class="icons-header">
-                <img src="images/otro.svg" alt="notification">
-            </a>
-            <img src="images/ad8a187ac178fcca657d5fc94140a54e.jpg" alt="imagen farmacia" class="user">
-        </div>
+    <a href="index.html" class="logo">
+      <img src="imagen/dibujo2.svg" alt="Logo NOVAPHARMA">
+      <span>NOVAPHARMA</span>
+    </a>
+    <button class="menu-toggle">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" class="active">Catálogo</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+      </ul>
+    </nav>
   </header>
-  <div class="sidebar" id="sidebar" >
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="selected">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="catalogo.html">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Catalogo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="promociones.html">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Promociones</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="servicios.html">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Servicios</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contacto.html">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Contacto</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="consejos.html">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Consejos</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-  </div>
 
-  <main>
-    <section class="categoria">
-      <h2>Equipo Médico</h2>
-      <p class="intro">Instrumentos y dispositivos de uso clínico y doméstico.</p>
+<section>
+    <h2 style="font-weight: bold; color:#0077b6; text-align: center; font-size: 50px;">Equipo Medico</h2>
+    
 
-      <div class="grid">
-        <div class="card">
-          <img src="imagen/termometro.png" alt="Termómetro">
-          <h3>Termómetro Digital</h3>
-          <p>Medición precisa y rápida.</p>
-        </div>
-        <div class="card">
-          <img src="imagen/oximetro.png" alt="Oxímetro">
-          <h3>Oxímetro de Pulso</h3>
-          <p>Mide oxígeno en sangre y pulso.</p>
-        </div>
-        <div class="card">
-          <img src="imagen/esfigmomanometro.png" alt="Esfigmomanómetro">
-          <h3>Esfigmomanómetro</h3>
-          <p>Monitorea tu presión arterial.</p>
-        </div>
+    <div class="catalogo">
+      <!-- Producto 1 -->
+      <div class="producto">
+        <img src="images/Tensiómetro.png" alt="Paracetamol">
+        <h3>Tensiómetro Digital OMRON HEM-7120</h3>
+        <p class="descripcion">Equipo automático de muñeca para la medición precisa de la presión arterial.</p>
+        <p class="precio">Precio aprox: <span>$15.99</span></p>
+        <a href="tensiometro.html" class="btn">Ver más</a>
       </div>
-    </section>
-  </main>
 
+      <!-- Producto 2 -->
+      <div class="producto">
+        <img src="images/Glucómetro.png" alt="Ibuprofeno">
+        <h3>Glucómetro ACCU-CHEK Active + 10 tiras</h3>
+        <p class="descripcion">Dispositivo confiable para el control de glucosa en sangre.</p>
+        <p class="precio">Precio aprox: <span>$5.00</span></p>
+        <a href="glucometro.html" class="btn">Ver Más</a>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto">
+        <img src="images/Termómetro.png" alt="Amoxicilina">
+        <h3>Termómetro Infrarrojo BEURER FT90</h3>
+        <p class="descripcion">Termómetro clínico sin contacto</p>
+        <p class="precio">Precio aprox: <span>$11.00</span></p>
+        <a href="termometro.html" class="btn">Ver más</a>
+      </div>
+
+      <div class="producto">
+        <img src="images/Oxímetro.png" alt="Amoxicilina">
+        <h3>Oxímetro de Pulso CONTEC CMS50D</h3>
+        <p class="descripcion">Medidor portátil de saturación de oxígeno (SpO₂) y pulso.</p>
+        <p class="precio">Precio aprox: <span>$45.00</span></p>
+        <a href="oximetro.html" class="btn">Ver más</a>
+      </div>
+
+      
+
+
+      
+  </section>
   <footer>
     <p>&copy; 2025 NOVAPHARMA - Todos los derechos reservados</p>
   </footer>
 
-  <script src="js/nav.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

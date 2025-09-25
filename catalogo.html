@@ -4,121 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo - NOVAPHARMA</title>
-<<<<<<< HEAD
-  <link rel="stylesheet" href="css/nav.css">
-=======
   <link rel="icon" href="images/icono de la paguina.svg" type="image/png"> 
->>>>>>> 4e301906e6f8ae09d81e2d978eae56f0a58d2350
   <link rel="stylesheet" href="css/catalogo.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
-        <div class="left">
-            <div class="menu-container">
-                <div class="menu" id="menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <div class="brand">
-                <img class="new-logo" src="images/new-icon.svg" alt="" class="logo">
-                <span class="name">Novapharma</span>
-            </div>
-        </div>
-        <div class="right">
-            <a href="index.html" class="icons-header">
-                <img src="images/inicio.svg" alt="chat">
-            </a>
-            <a href="catalogo.html" class="icons-header">
-                <img src="images/catalogo.svg" alt="question">
-            </a>
-            <a href="promociones.html" class="icons-header">
-                <img src="images/promociones.svg" alt="notification">
-            </a>
-            <img src="images/ad8a187ac178fcca657d5fc94140a54e.jpg" alt="imagen farmacia" class="user">
-        </div>
-    </header>
-    <div class="sidebar" id="sidebar" >
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="selected">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="catalogo.html">
-                        <img src="images/catalogo.svg" alt="">
-                        <span>Catalogo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="promociones.html">
-                        <img src="images/promociones.svg" alt="">
-                        <span>Promociones</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="servicios.html">
-                        <img src="images/servicios.svg" alt="">
-                        <span>Servicios</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contacto.html">
-                        <img src="images/contact.svg" alt="">
-                        <span>Contacto</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="consejos.html">
-                        <img src="images/consejos.svg" alt="">
-                        <span>Consejos</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <a href="index.html" class="logo">
+      <img src="imagen/dibujo2.svg" alt="Logo NOVAPHARMA">
+      <span>NOVAPHARMA</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" class="active">Catálogo</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="consejos.html">Consejos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- CATÁLOGO -->
+  <!-- Título centrado -->
+  <section class="titulo-catalogo">
+    <h1>Catálogo</h1>
+  </section>
+
   <main>
-    <section class="catalogo">
-      <h2>Catálogo de Productos</h2>
-      <p class="intro">Explora nuestras categorías de productos diseñados para tu salud y bienestar.</p>
-      
-      <div class="grid">
-        <a href="medicamentos.html" class="card">
-          <img src="imagen/medicamentos.jpg" alt="Medicamentos">
-          <h3>Medicamentos</h3>
-          <p>Amplia variedad de fármacos con y sin receta.</p>
-        </a>
-        <a href="cuidado.html" class="card">
-          <img src="imagen/higiene.webp" alt="Cuidado Personal">
-          <h3>Cuidado Personal</h3>
-          <p>Productos para tu higiene, piel y bienestar diario.</p>
-        </a>
-        <a href="vitaminas.html" class="card">
-          <img src="imagen/centrum.avif" alt="Vitaminas">
-          <h3>Vitaminas</h3>
-          <p>Suplementos para reforzar tu energía y defensas.</p>
-        </a>
-        <a href="equipo.html" class="card">
-          <img src="imagen/equipo.jpg" alt="Equipo Médico">
-          <h3>Equipo Médico</h3>
-          <p>Instrumentos y dispositivos de uso clínico y doméstico.</p>
-        </a>
+    <!-- Medicamentos -->
+    <section class="categoria">
+      <div class="texto">
+        <h2>Medicamentos</h2>
+        <p>Encuentra medicamentos de venta libre y con receta para distintas necesidades de salud.</p>
+      </div>
+      <div class="visual">
+        <img src="images/medicamentos.png.png" alt="Medicamentos">
+        <a href="medicamentos.html" class="btn">ver</a>
+      </div>
+    </section>
+    <br>
+    <br>
+    <!-- Cuidado personal -->
+    <section class="categoria">
+      <div class="texto">
+        <h2>Cuidado Personal</h2>
+        <p>Productos para higiene, cosmética y bienestar diario.</p>
+      </div>
+      <div class="visual">
+        <img src="images/cuidado-personal.png" alt="Cuidado Personal">
+        <a href="cuidado.html" class="btn">ver</a>
+      </div>
+    </section>
+    <br>
+    <br>
+    <!-- Vitaminas -->
+    <section class="categoria">
+      <div class="texto">
+        <h2>Vitaminas y suplementos</h2>
+        <p>Suplementos y vitaminas para mantener tu energía y fortalecer tu salud.</p>
+      </div>
+      <div class="visual">
+        <img src="images/vitaminas.png" alt="Vitaminas">
+        <a href="vitaminas.html" class="btn">ver</a>
+      </div>
+    </section>
+    <br>
+    <br>
+    <!-- Equipo médico -->
+    <section class="categoria">
+      <div class="texto">
+        <h2>Equipo Médico</h2>
+        <p>Instrumentos y accesorios para el cuidado de la salud en el hogar o en clínicas.</p>
+      </div>
+      <div class="visual">
+        <img src="images/eqipo medico.png" alt="Equipo Médico">
+        <a href="equipo.html" class="btn">ver</a>
       </div>
     </section>
   </main>
-
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 NOVAPHARMA - Todos los derechos reservados</p>
   </footer>
 
-  <script src="js/nav.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

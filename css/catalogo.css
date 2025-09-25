@@ -1,3 +1,78 @@
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* ================== HEADER ================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #009879;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background: #fff;
+  transition: width 0.3s;
+}
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* ====== BOTÓN HAMBURGUESA ====== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* ================== CATÁLOGO ================== */
 .catalogo {
   padding: 3rem 2rem;
@@ -7,10 +82,6 @@
   font-size: 2.5rem;
   color: #009879;
   margin-bottom: 1rem;
-}
-
-.new-logo{
-  width: 4rem;
 }
 .catalogo .intro {
   font-size: 1.2rem;
@@ -88,4 +159,1010 @@ footer {
   .menu-toggle {
     display: block;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+hero {
+  background: linear-gradient(to right, #e9f5f3, #ffffff);
+  text-align: center;
+  padding: 5rem 2rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero {
+  background: url(../imagen/11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.hero-promo {
+  background: linear-gradient(to right, #2a9d8f, #264653);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero-promo h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Botón genérico */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #2ECC71;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #21867a;
+}
+
+/* ================== GRID & CARDS ================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.promo {
+  border: 2px solid #e76f51;
+  background: #fff5f2;
+}
+
+/* ================== FORMULARIO ================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+  margin: 1rem 0;
+  animation: fadeIn 1.5s ease;
+}
+
+input, textarea, button {
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #2a9d8f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #21867a;
+  transform: scale(1.05);
+}
+
+/* ================== CATÁLOGO ================== */
+.catalogo {
+  padding: 2rem;
+  text-align: center;
+}
+
+.catalogo h2 {
+  font-size: 2rem;
+  color: #264653;
+}
+
+.catalogo .intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.catalogo .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.catalogo .card {
+  background: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalogo .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.catalogo .card h3 {
+  margin: 0.5rem 0;
+  color: #2a9d8f;
+}
+
+.catalogo .card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.catalogo .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* ================== PROMOCIONES ================== */
+.promociones {
+  padding: 2rem;
+  text-align: center;
+}
+
+.promociones h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #264653;
+}
+
+.promociones .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.promociones .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.promociones .card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.promociones .card h3 {
+  color: #2a9d8f;
+  margin: 0.5rem 0;
+}
+
+.promociones .card .price {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.promociones .old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 0.5rem;
+}
+
+.promociones .new-price {
+  font-weight: bold;
+  color: #e63946;
+  font-size: 1.2rem;
+}
+
+.promociones .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ================== SERVICIOS ================== */
+.servicios {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.servicios h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ================== CONTACTO ================== */
+.contacto {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-card, .info-card {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-card h3, .info-card h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #009879;
+}
+
+.form-card input, .form-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #009879;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-card button:hover {
+  background-color: #007a63;
+}
+
+.info-card p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ================== CONSEJOS ================== */
+.consejos {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.consejos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card .icon img {
+  height: 200px;
+  width: 200px;
+}
+
+.card .icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #009879;
+}
+
+/* ================== PRODUCTOS ================== */
+.hero {
+  position: relative;
+}
+
+.productos h2 {
+  align-items: center;
+  text-align: center;
+}
+
+.productos p {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.productos p:last-child {
+  margin-top: auto;
+}
+
+/* ================== FOOTER ================== */
+main {
+  flex: 1;
+}
+
+footer {
+  background: #264653;
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  min-height: 20vh;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #009879;
+  color: #fff;
+  margin-top: 50px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2ECC71;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* ================== ANIMACIONES ================== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    color: white;
+  }
+}
+
+/* ================== EXTRA ================== */
+.sidebar {
+  display: none;
+}
+
+
+/* ====== BOTÓN HAMBURGUESA ====== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ====== RESPONSIVE NAVBAR ====== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px; /* debajo del header */
+    right: 0;
+    width: 200px;
+    background: #2a9d8f;
+    border-radius: 0 0 8px 8px;
+    display: none; /* oculto por defecto */
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav.show {
+    display: flex; /* se muestra al activar el menú */
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0077b6;
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffd60a;
+}
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Categorías */
+.categoria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.categoria .texto {
+  flex: 2;
+}
+
+.categoria .texto h2 {
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+
+.categoria .texto p {
+  line-height: 1.5;
+}
+
+.categoria .visual {
+  flex: 1;
+  text-align: center;
+}
+
+.categoria .visual i {
+  font-size: 3rem;
+  color: #0077b6;
+  margin-bottom: 0.8rem;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #005f87;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2ECC71;
+  margin-top: 2rem;
+}
+
+
+/*estilos de la pagina principal del catalogo*/
+
+
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0077b6;
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: white;
+}
+
+/* Título catálogo */
+.titulo-catalogo {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.titulo-catalogo h1 {
+  font-size: 2.5rem;
+  color: #0077b6;
+}
+
+/* Main */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+/* Categorías */
+.categoria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 910px;
+  background: white;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.categoria .texto {
+  flex: 2;
+}
+
+.categoria .texto h2 {
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+
+.categoria .texto p {
+  line-height: 1.5;
+}
+
+.categoria .visual {
+  flex: 1;
+  text-align: center;
+}
+
+.categoria .visual img {
+  max-width: 80px;
+  margin-bottom: 0.8rem;
+}
+
+.btn {
+  background: #2ECC71;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #005f87;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f1f1f1;
+  margin-top: 2rem;
+}
+.categoria .visual {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: center;    /* Centra horizontalmente */
+}
+.categoria .visual img {
+  width: 560px;      /* ajusta este valor para hacerlo más grande o más pequeño */
+  height: 100px;      /* mantiene la proporción */
+  margin-bottom: 10px; /* deja espacio entre la imagen y el botón */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background:#0077b6;
+  color: #fff;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+header .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Contenido */
+.contenido {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.contenido h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+.contenido p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* Catálogo en grid */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjeta de producto */
+.producto {
+  background: #faf8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.producto img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+.producto .descripcion {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.producto .precio {
+  font-weight: bold;
+  color: #2ECC71;;
+  margin-bottom: 10px;
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #2ECC71;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #21867a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2ECC71;
+  color: #fff;
+  margin-top: 30px;
+}
+
+
+
+
+/*pagina de detalles paracetamol*/
+
+
+
+/* Detalle de producto */
+.producto-detalle {
+  max-width: 1100px;
+  margin: 30px auto;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+.imagen-producto img {
+  height: 400px;
+  width: 650px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.info-producto {
+  flex: 1;
+}
+
+.info-producto h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.info-producto .precio {
+  font-size: 1.3rem;
+  color: #2ECC71;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #2ECC71;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  background: #21867a;
+}
+
+.secciones-info {
+  margin-top: 20px;
+}
+
+.bloque {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.bloque h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Precio destacado */
+.precio-box {
+  background-color: #001f3f; /* azul marino */
+  color: white;
+  padding: 10px;
+  display: inline-flex;
+  gap: 15px;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.precio-anterior {
+  text-decoration: line-through;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.precio-actual {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFD700; /* dorado para destacar */
+}
+
+/* Secciones desplegables */
+.bloque {
+  margin: 15px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.toggle {
+  cursor: pointer;
+  color: #2ECC71;
+  margin: 0;
+}
+
+.contenido {
+  display: none;
+  margin-top: 8px;
+  color: #333;
+}
+
+.contenido.activo {
+  display: block;
 }
