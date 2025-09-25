@@ -10,19 +10,18 @@ html, body {
   color: #333;
 }
 
-.new-logo{
-  width: 4rem;
-}
-
 /* ================== PROMOCIONES ================== */
 .promociones {
   padding: 3rem 2rem;
   text-align: center;
+  height: 100%;
 }
 .promociones h2 {
   font-size: 2.5rem;
-  color: #009879;
+  color: #077c65;
   margin-bottom: 1rem;
+  height: 6%;
+  margin-top: 20px;
 }
 .promociones .intro {
   font-size: 1.2rem;
@@ -73,38 +72,26 @@ html, body {
 
 /* ================== FOOTER ================== */
 footer {
-  background-color: #2ECC71;
+  background: linear-gradient(135deg, #009879, #007f65);
   color: #fff;
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
 }
 
-/* ================== RESPONSIVE ================== */
-@media (max-width: 768px) {
-  nav {
-    position: fixed;
-    top: 70px;
-    right: 0;
-    width: 220px;
-    height: calc(100% - 70px);
-    background-color: #009879;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 2rem;
-    gap: 2rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 999;
+footer p {
+  margin: 0.3rem 0;
+}
+
+/* ================== RESPONSIVE EXTRA ================== */
+@media (max-width: 480px) {
+  .promociones h2 {
+    font-size: 2rem;
   }
-  nav.show {
-    transform: translateX(0);
+  .promociones .intro {
+    font-size: 1rem;
   }
-  nav ul {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .menu-toggle {
-    display: block;
+  .card img {
+    height: 140px;
   }
 }
