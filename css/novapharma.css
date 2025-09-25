@@ -15,6 +15,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.new-logo{
+  width: 4rem;
+}
+
 /* ================== HERO ================== */
 .hero {
 
