@@ -10,83 +10,53 @@
 <body>
   <!-- HEADER -->
   <header>
-        <div class="left">
-            <div class="menu-container">
-                <div class="menu" id="menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <div class="brand">
-                <img class="new-logo" src="images/new-icon.svg" alt="" class="logo">
-                <span class="name">Novapharma</span>
-            </div>
+    <div class="left">
+      <div class="menu-container">
+        <div class="menu" id="menu">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-        <div class="right">
-            <a href="index.html" class="icons-header">
-                <img src="images/inicio.svg" alt="chat">
-            </a>
-            <a href="catalogo.html" class="icons-header">
-                <img src="images/catalogo.svg" alt="question">
-            </a>
-            <a href="promociones.html" class="icons-header">
-                <img src="images/promociones.svg" alt="notification">
-            </a>
-            <img src="images/ad8a187ac178fcca657d5fc94140a54e.jpg" alt="imagen farmacia" class="user">
-        </div>
+      </div>
+      <a href="index.html" class="brand">
+        <img src="images/dibujo2.svg" alt="Logo" class="logo">
+        <span class="name">Novapharma</span>
+      </a>
+    </div>
+    <div class="right">
+      <a href="index.html" class="icons-header">
+        <img src="images/inicio.svg" alt="Inicio">
+      </a>
+      <a href="catalogo.html" class="icons-header">
+        <img src="images/catalogo.svg" alt="Catalogo">
+      </a>
+      <a href="promociones.html" class="icons-header">
+        <img src="images/promociones.svg" alt="Promociones">
+      </a>
+    </div>
   </header>
-  <div class="sidebar" id="sidebar" >
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="selected">
-                        <img src="images/inicio.svg" alt="">
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="catalogo.html">
-                        <img src="images/catalogo.svg" alt="">
-                        <span>Catalogo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="promociones.html">
-                        <img src="images/promociones.svg" alt="">
-                        <span>Promociones</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="servicios.html">
-                        <img src="images/servicios.svg" alt="">
-                        <span>Servicios</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contacto.html">
-                        <img src="images/contact.svg" alt="">
-                        <span>Contacto</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="consejos.html">
-                        <img src="images/consejos.svg" alt="">
-                        <span>Consejos</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="images/inicio.svg" alt=""> <span>Inicio</span></a></li>
+        <li><a href="catalogo.html"><img src="images/catalogo.svg" alt=""> <span>Catalogo</span></a></li>
+        <li><a href="promociones.html"><img src="images/promociones.svg" alt=""> <span>Promociones</span></a></li>
+        <li><a href="servicios.html"><img src="images/servicios.svg" alt=""> <span>Servicios</span></a></li>
+        <li><a href="contacto.html" class="selected"><img src="images/contact.svg" alt=""> <span>Contacto</span></a></li>
+        <li><a href="consejos.html"><img src="images/consejos.svg" alt=""> <span>Consejos</span></a></li>
+      </ul>
+    </nav>
   </div>
 
   <!-- CONTACTO -->
-  <main>
+  <main id="main">
     <section class="contacto">
       <h2>Contacto</h2>
       <p class="intro">Estamos aquí para ayudarte. Escríbenos y te responderemos a la brevedad.</p>
 
       <div class="contact-flex">
-        <!-- FORMULARIO + INFO -->
         <div class="contact-info">
           <div class="form-card">
             <h3>Formulario de Contacto</h3>
@@ -107,7 +77,6 @@
           </div>
         </div>
 
-        <!-- MAPA -->
         <div class="map-container">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.392832718245!2d-89.22913038470776!3d13.699048990359878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633a3dbf3c0f85%3A0xaaaaaaaaaaaaaaa!2sSan%20Salvador%2C%20El%20Salvador!5e0!3m2!1ses!2sus!4v1694723456789!5m2!1ses!2sus" 
@@ -115,8 +84,7 @@
             height="100%" 
             style="border:0; border-radius:15px;" 
             allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            loading="lazy">
           </iframe>
         </div>
       </div>
@@ -126,6 +94,8 @@
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 NOVAPHARMA - Todos los derechos reservados</p>
+    <p>Tel: +503 1234 5678 | Email: contacto@novapharma.com</p>
+    <p>Horario: Lunes - Sábado: 8:00 am - 9:00 pm | Domingo: 9:00 am - 5:00 pm</p>
   </footer>
 
   <script src="js/nav.js"></script>
