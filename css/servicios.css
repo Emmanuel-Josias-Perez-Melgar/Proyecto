@@ -4,7 +4,9 @@
     padding:0; 
     box-sizing:border-box; 
 }
-
+.new-logo{
+  width: 5vw;
+}
 body { 
     font-family: Arial, sans-serif; 
     background:#f7f7f7; 
