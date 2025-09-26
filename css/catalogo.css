@@ -118,11 +118,15 @@ main {
 
 /* ====== FOOTER ====== */
 footer {
+  background: linear-gradient(135deg, #009879, #007f65);
+  color: #fff;
   text-align: center;
-  padding: 1rem;
-  background: #2ECC71;
-  color: white;
-  margin-top: 2rem;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
 }
 
 /* ====== RESPONSIVE ====== */
@@ -157,3 +161,4 @@ footer {
     width: 100%;
   }
 }
+
