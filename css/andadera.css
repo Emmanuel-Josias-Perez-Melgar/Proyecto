@@ -40,11 +40,7 @@ header .logo img {
   margin-right: 10px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -56,15 +52,6 @@ nav ul li a.active {
   color: #ffd60a;
 }
 
-/* Botón hamburguesa */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
-}
 
 /* ================== PRODUCTO DETALLE ================== */
 .producto-detalle {

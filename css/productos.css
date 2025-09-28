@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.new-logo{
+    width: 5vw;
+}
+
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;
@@ -39,6 +44,7 @@ header .logo img {
   height: 50px;
   margin-right: 10px;
 }
+
 
 nav ul li a {
   color: #fff;

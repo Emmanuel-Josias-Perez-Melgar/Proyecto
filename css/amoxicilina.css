@@ -37,11 +37,7 @@ header {
   height: 50px;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
+
 nav a {
   color: #fff;
   text-decoration: none;
@@ -63,15 +59,7 @@ nav a.active::after {
   width: 100%;
 }
 
-/* ====== BOTÓN HAMBURGUESA ====== */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
-}
+
 
 /* ================== CATÁLOGO ================== */
 .catalogo {
