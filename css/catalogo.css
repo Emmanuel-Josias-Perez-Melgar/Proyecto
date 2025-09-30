@@ -46,6 +46,7 @@ nav ul li a.active {
 .titulo-catalogo h1 {
   font-size: 2.2rem;
   color: #0077b6;
+  margin-top: 50px;
 }
 
 main {
@@ -157,4 +158,5 @@ footer p {
     width: 100%;
   }
 }
+
 
