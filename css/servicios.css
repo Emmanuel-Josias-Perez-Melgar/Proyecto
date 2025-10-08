@@ -4,99 +4,6 @@
     padding:0; 
     box-sizing:border-box; 
 }
-.new-logo{
-    width: 5vw;
-}
-body { 
-    font-family: Arial, sans-serif; 
-    background:#f7f7f7; 
-    color:#333; 
-}
-
-/* HEADER */
-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0.5rem 1rem;
-    background:white;
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:200;
-    border-bottom:1px solid #E6E9ED;
-}
-
-.left {
-    display:flex;
-    align-items:center;
-    gap:1rem;
-}
-
-.menu-container {
-    cursor:pointer;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    height:1.2rem;
-}
-
-.menu div {
-    width:25px;
-    height:3px;
-    background:#333;
-    transition: all 0.3s;
-}
-
-.menu.menu-toggle div:first-child {
-    transform:rotate(45deg) translate(5px,5px);
-}
-.menu.menu-toggle div:nth-child(2) { opacity:0; }
-.menu.menu-toggle div:last-child {
-    transform:rotate(-45deg) translate(5px,-5px);
-}
-
-.brand {
-    display:flex;
-    align-items:center;
-    gap:0.5rem;
-}
-
-.brand .logo { width:40px; }
-.brand .name { font-size:1.4rem; font-weight:700; color:#009879; text-decoration:none; }
-
-.right {
-    display:flex;
-    align-items:center;
-    gap:1rem;
-}
-
-.right a:hover { background:#F7F9FA; border-radius:50%; }
-.right img.user { width:40px; border-radius:50%; }
-
-/* SIDEBAR */
-.sidebar {
-    margin-top:60px;
-    width:0;
-    height:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    background:white;
-    border-right:1px solid #E6E9ED;
-    overflow-x:hidden;
-    transition: width 0.4s ease;
-    z-index:150;
-}
-.sidebar.menu-toggle { width:250px; }
-.sidebar nav ul { list-style:none; padding:1rem; }
-.sidebar a {
-    display:flex; align-items:center; gap:1rem;
-    padding:0.8rem; text-decoration:none; color:#333; border-radius:0.4rem;
-}
-.sidebar a:hover { background:#F7F9FA; }
-.sidebar a.selected { background:#EBF0FF; color:#355CC0; }
-.sidebar img { width:25px; }
 
 /* SERVICIOS */
 .servicios { 
@@ -130,6 +37,9 @@ footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
