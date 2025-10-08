@@ -97,3 +97,9 @@ footer p {
   .card { padding:1rem; }
 }
 
+
+@media(max-width: 768px){
+  header {
+    height: 4rem;
+  }
+}
