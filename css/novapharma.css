@@ -4,10 +4,15 @@
   text-align: center;
   padding: 7rem 2rem;
   color: #fff;
+  margin: 4rem 0 0 0;
 }
 
 .Nova p {
   color: white;
+}
+
+.brand {
+  text-decoration: none;
 }
 
 .hero-content h1 {
