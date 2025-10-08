@@ -80,6 +80,7 @@ header {
 }
 
 .brand {
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -133,7 +134,7 @@ header {
   z-index: 150;
   background: var(--background);
   border-right: 1px solid var(--border);
-  overflow-y: auto; /* ✅ si se llena, que aparezca scroll */
+  overflow-y: auto; /* si se llena, que aparezca scroll */
   transition: width 0.4s ease;
 }
 

@@ -7,37 +7,6 @@ body {
   padding: 0;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #0077b6;
-  color: white;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-header .logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav ul li a.active {
-  text-decoration: underline;
-}
-
 /* ====== CATÁLOGO ====== */
 .titulo-catalogo {
   text-align: center;
@@ -50,6 +19,7 @@ nav ul li a.active {
 }
 
 main {
+  margin: 4rem 0 0 0;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem 2rem;
