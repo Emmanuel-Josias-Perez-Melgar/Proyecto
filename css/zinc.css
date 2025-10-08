@@ -13,63 +13,10 @@ html, body {
   flex-direction: column;
 }
 
-/* ================== HEADER ================== */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background:#0077b6;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-header .logo img {
-  height: 50px;
-  margin-right: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-nav ul li a:hover,
-nav ul li a.active {
-  color: #ffd60a;
-}
-
-/* Botón hamburguesa */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
-}
-
 /* ================== PRODUCTO DETALLE ================== */
 .producto-detalle {
   max-width: 1100px;
-  margin: 30px auto;
+  margin: 4rem 0 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;

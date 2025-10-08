@@ -70,6 +70,22 @@ html, body {
   color: #e63946;
 }
 
+.btn {
+  background: #2ECC71;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+  text-decoration: none; /* sin subrayado */
+  display: inline-block;
+}
+.btn:hover {
+  background: #21867a;
+}
+
 /* ================== FOOTER ================== */
 footer {
   background: linear-gradient(135deg, #009879, #007f65);
