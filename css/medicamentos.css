@@ -765,7 +765,7 @@ main {
 footer {
   text-align: center;
   padding: 15px;
-  background: #040505;
+  background: linear-gradient(135deg, #009879, #007f65);
   color: #fff;
   margin-top: 30px;
   height: 100%;
